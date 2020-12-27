@@ -1,0 +1,52 @@
+#contactCont {
+    height: 100vh;
+    padding-top: 20vh;
+    background-color: #F0EEEB;
+    color: #333;
+} 
+
+.contactTit {
+    font-size: 10vw;
+    line-height: .8;
+    color: firebrick;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 0;
+}
+.contP {
+    font-size: 1.5vw;
+    border-bottom: 2px solid #333;
+    padding-bottom: 4vh;
+    font-family: 'S-CoreDream-3Light';
+    color: firebrick;
+}
+
+.info {
+    overflow: hidden;
+    width: 100%;
+    margin:0 auto;
+    padding: 2vh 0;
+
+    p {
+        float: left;
+        width: 50%;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 100;
+        font-family: 'Staatliches', cursive;
+        line-height: 2;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.bottom {
+    border-top: 1px solid #333;
+    float: right;
+    width: 100%;
+    text-align: right;
+    font-size: 3vw;
+    font-family: 'S-CoreDream-3Light';
+    padding-top:7vh;
+}

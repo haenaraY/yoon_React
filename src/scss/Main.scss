@@ -1,0 +1,68 @@
+#mainCont {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.img01 {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 22%;
+}
+
+.img01 img,
+.img02 img,
+.img03 img {
+    width: 100%;
+}
+
+.img02 {
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    width: 27%;
+    transform: rotate(-5deg);
+}
+
+.img03 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 40%;
+}
+
+.mainText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    width: 80%;
+    mix-blend-mode: exclusion;
+    z-index: 5;
+
+    > div {
+        font-size: 15vw;
+        line-height: 9vw;
+        font-family: 'Staatliches', cursive;
+        margin-bottom: 5px;
+        padding: 1.5vw 0 0 0;
+        color: #fff;
+        mix-blend-mode: exclusion;
+    
+    }
+}
+
+.white {
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    color: #F0EEEB;
+    font-size: 30px;
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}

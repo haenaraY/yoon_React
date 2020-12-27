@@ -1,0 +1,136 @@
+#aboutCont {
+    padding-top:1vh;
+    background-color: #F0EEEB;
+    color: #333;
+}
+#contactTit span {
+    color: firebrick;
+}
+
+.aboutTxt .word {
+    padding-left: 30%;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.aboutTxt .word div {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 5vw;
+    line-height: 1.2;
+}
+
+.aboutTxt .word div:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'made_mirageRagular';
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.aboutTxt .word div:nth-child(2) {
+    opacity: 1;
+    width: 0;
+    margin-left: -5px;
+    padding-left:2px;
+    font-family: 'made_miragethin';
+    border-bottom: 1px solid #000;
+}
+
+.aboutTxt .word div:last-of-type span {
+    margin-left: 0px;
+    padding-right: 30px;
+}
+
+.ko {
+    font-family: 'S-CoreDream-3Light';
+    font-size: 2vw;
+    width: 0;
+    margin-right: -355px;
+    font-style: italic;
+    animation: slidedelay 7s;
+
+}
+
+.aboutTxt .word:hover > div:first-child {
+    animation: showup .5s;
+    animation-fill-mode: forwards;
+}
+
+.aboutTxt .word:hover > div:nth-child(2) {
+    animation: reveal 1s;
+    animation-fill-mode: forwards;
+}
+
+.aboutTxt .word:hover > div:nth-child(2) span {
+    animation: slidein 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showup {
+    0% {
+        color: #333;
+    }
+
+    50% {
+        color: firebrick;
+    }
+
+    100% {
+        color:#333;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+
+    40% {
+        opacity: 1;
+        width: auto;
+    }
+
+
+    100% {
+        opacity: 1;
+        width: auto;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    40% {
+        opacity: 1;
+        width: 355px;
+    }
+
+    100% {
+        opacity: 1;
+        width: 355px;
+    }
+}
+
+.word:last-child {
+    padding-bottom: 15vh;
+}

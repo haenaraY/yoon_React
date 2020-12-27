@@ -1,0 +1,145 @@
+/* font */
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    color: #fff;
+    height: 82px;
+    border-bottom: 1px solid rgba(218, 216, 209, 0.2);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+
+    .port {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-right: 1px solid rgba(218, 216, 209, 0.2);
+        height: 82px;
+        padding: 24px 70px;
+
+        a {
+            position: relative;
+            display: block;
+            padding: 5px;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 16px;
+            padding-left: 40px;
+            font-family: 'Staatliches', cursive;
+            text-transform: uppercase;
+        }
+        
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 14px;
+
+        a {
+            font-size: 30px;
+            display: inline-block;
+            padding: 5px 15px;
+            font-family: 'Staatliches', cursive;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+    
+    }
+
+    .nav {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+
+        ul {
+            text-align: right;
+        }
+
+        li {
+            display: inline-block;
+            padding-left: 5px;
+        }
+    }
+}
+
+#header.filter {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(68%) blur(5px);
+    -webkit-backdrop-filter: saturate(68%) blur(5px);
+    -moz-backdrop-filter: saturate(68%) blur(5px);
+    -o-backdrop-filter: saturate(68%) blur(5px);
+}
+
+#header .port a::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 11px;
+    width: 28px;
+    height: 1px;
+    background: #fff;
+}
+
+#header .port a::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    width: 28px;
+    height: 1px;
+    background: #fff;
+}
+
+#header .nav li a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px;
+    font-family: 'S-CoreDream-3Light', sans-serif;
+}
+
+#header.gray {
+    background: rgba(240, 238, 235, .9);
+    border-bottom: 1px solid rgba(218, 216, 209, 0.4);
+}
+
+#header.gray.on {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(128%) blur(5px);
+    -webkit-backdrop-filter: saturate(128%) blur(5px);
+    -moz-backdrop-filter: saturate(128%) blur(5px);
+    -o-backdrop-filter: saturate(128%) blur(5px);
+}
+
+#header.gray .port {
+    border-right: 1px solid rgba(218, 216, 209, 0.4);
+}
+
+#header.gray .logo a {
+    color: #030406;
+}
+
+#header.gray .nav li a {
+    color: #030406;
+}
+
+#header.gray .port a {
+    color: #030406;
+}
+
+#header.gray .port a::before {
+    background: #030406;
+}
+
+#header.gray .port a::after {
+    background: #030406;
+}
+#header.gray #contTitle span {
+    color: firebrick;
+}
