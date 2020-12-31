@@ -55,7 +55,7 @@ class Port extends React.Component {
                             <div className="siteList">
                                 <div className="left cont">
                                     <h3>RESPONSIVE</h3>
-                                    <a href="http://haenara.dothome.co.kr/Portfolio/nike/index.html">
+                                    <a href="http://haenara.dothome.co.kr/Portfolio/responsive/index.html#">
                                         <span></span>
                                         <span></span>
                                         <span></span>
@@ -103,8 +103,8 @@ class Port extends React.Component {
                                     <img src={img05} alt="반응형 사이트 이미지" />
                                 </div>
                                 <div className="right txt">
-                                    <h3>RESPONSIVE</h3>
-                                    <a href="http://haenara.dothome.co.kr/Portfolio/nike/index.html">
+                                    <h3>Agency</h3>
+                                    <a href="http://haenara.dothome.co.kr/Portfolio/AA/index.html">
                                         <span></span>
                                         <span></span>
                                         <span></span>
